@@ -1,0 +1,86 @@
+.task-list {
+  width: 100%;
+  max-width: 600px; /* Limit the width for a better visual appearance */
+  margin: 20px auto; /* Center the task list on the page */
+  background-color: #f9f9f9; /* Light background for the task list */
+  border-radius: 8px; /* Soft rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+.task-list__name{
+  padding: 20px;
+}
+.task-list__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-list__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border-bottom: 1px solid #ddd; /* Separator between tasks */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.task-list__item:last-child {
+  border-bottom: none; /* Remove bottom border for the last item */
+}
+
+.task-list__item p {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #333;
+  flex-grow: 1; /* Ensure the task name uses available space */
+}
+
+.task-list__button {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+}
+
+.task-list__deleteBtn,
+.task-list__editBtn {
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.task-list__deleteBtn {
+  background-color: #e74c3c; /* Red color for delete */
+  color: white;
+}
+
+.task-list__editBtn {
+  background-color: #3498db; /* Blue color for edit */
+  color: white;
+}
+
+.task-list__deleteBtn:hover {
+  background-color: #c0392b; /* Darker red on hover */
+}
+
+.task-list__editBtn:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+.task-list__editInput {
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+.task-done {
+  background-color: #e0f7e9; /* Light green background for completed tasks */
+}
+
+.task-done p {
+  text-decoration: line-through; /* Strike-through effect for completed tasks */
+  color: #7f8c8d;
+}
